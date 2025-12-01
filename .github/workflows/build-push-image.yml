@@ -21,7 +21,7 @@ jobs:
         run: echo ${{ secrets.DOCKER_USER }} | docker login ghcr.io -u MTAKB --password-stdin
 
       - name: Tag image
-        run: docker tag imageku ghcr.io/MTAKB/imageku:latest
+        run: docker tag imageku ghcr.io/mtakb/imageku:latest
 
       - name: Push Image
-        run: docker push ghcr.io/MTAKB/imageku:latest
+        run: docker push ghcr.io/mtakb/imageku:latest
